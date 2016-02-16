@@ -1,0 +1,155 @@
+html{
+	height: 100%;
+}
+body{
+	margin:0;
+	padding:0;
+	font-size: 18px;
+	font-family:Heiti SC,Helvetica,Droidsansfallback;
+	color:#333;
+	/*background: url(http://static.udache.com/gulfstream/webapp/modules/quickReg/images/login.jpg) no-repeat center;*/
+	background:url(../img/bank-3.png) no-repeat center;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+}
+ul,li{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+p,h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+input{
+	outline: 0;
+}
+img{
+	border:none;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	overflow: hidden;
+	margin-left:10px;
+	margin-right:10px;
+}
+.body-wrap{
+	position: absolute;
+	left:0;
+	right:0;
+	bottom:0;
+}
+/*.title{
+	margin-bottom: 20px;
+}
+.title .container{
+	height: 200px;
+	background-color: #efefef;
+	background-image:url(./img/member.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	background-size: 180px auto;
+}
+.title h1{
+	text-align: center;
+	margin-top: 70px;
+	color:#666;
+}*/
+@-webkit-keyframes spin{
+  0%{-webkit-transform:rotate(0deg)}
+  100%{-webkit-transform:rotate(359deg)}
+}
+
+@-moz-keyframes spin{
+  0%{-moz-transform:rotate(0deg)}
+  100%{-moz-transform:rotate(359deg)}
+}
+@keyframes spin{
+  0%{transform:rotate(0deg)}
+  100%{transform:rotate(359deg)}
+}
+.main-title{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 300;
+	border:1px solid #ccc;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin:100px auto;
+	line-height: 100px;
+	color:#efefef;
+	color:#ed8000;
+	/*-webkit-animation: spin 60s infinite linear;*/
+}
+.main .container{
+	border-radius: 3px;
+	padding:10px;
+}
+.service-chose{
+	font-size: 0;
+	text-align: center;
+	color:#fff;
+	box-sizing:border-box;
+}
+.service-chose span{
+	display: inline-block;
+	font-size: 20px;
+	border-left:1px solid #fff;
+	width: 33.3333333333333%;
+	box-sizing:border-box;
+	padding:10px 0;
+	border:1px solid #ed8000;
+	border-left:none;
+}
+.service-chose span:first-child{
+	border-left:1px solid #ed8000;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.service-chose span:last-child{
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.service-chose .active{
+	background-color: #ed8000;
+	color:#fff;
+}
+.phone{
+	margin-top: 20px;
+}
+.phone input{
+	width: 100%;
+	border:1px solid #fff;
+	font-size: 22px;
+	padding:8px 5px;
+	border-radius: 3px;
+	box-sizing:border-box;
+}
+.submit{
+	display: block;
+	width: 100%;
+	padding:10px 0;
+	background-color:#2F5BB7;
+	color:#fff;
+	border-radius: 3px;
+	text-align: center;
+	margin-top: 20px;
+}
+.dn{
+	display: none;
+}
+#service-input{
+	display: none;
+}
+footer{
+	width: 100%;
+	text-align: center;
+	padding:1em 0;
+}
+#hint{
+	text-align: center;
+	color:#ed8000;
+}

@@ -1,0 +1,330 @@
+body{
+	margin:0;
+	padding:0;
+	font:14px/1.5 Heiti SC,Helvetica,Droidsansfallback,'microsoft yahei','arial';
+	color:#333;
+}
+.single-page,.single-page body{
+	height: 100%;
+	overflow: hidden;
+}
+.single-page body{
+	position: relative;
+}
+ul,li{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+p,dl,dd,h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+input,button,select{
+	outline: 0;
+	font-family: inherit;
+}
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;}
+img{
+	border:none;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color:#333;
+}
+h3{
+	font-size: 20px;
+	font-weight: 300;
+}
+/*-------------------lib--------------------*/
+.mt20{
+	margin-top:20px;
+}
+.ml20{
+	margin-left:20px;
+}
+.cf{
+	color:#fff;
+}
+.rel{
+	position: relative;
+}
+.fix:after{
+	display: table;
+	content: '';
+	clear:both;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+.dn{
+	display: none;
+}
+.db{
+	display: block;
+}
+.tl{
+	text-align: left;
+}
+.tr{
+	text-align: right;
+}
+.cg{
+	color:#44b549;
+}
+/*-------------------lib--------------------*/
+.container{
+	width: 1200px;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+.header{
+	border-top:4px solid #2f9833;
+	border-bottom: 1px solid #ccc;
+}
+.logo{
+	display: block;
+	width: 187px;
+	height:44px;
+	background:url(../img/logo.png) no-repeat center;
+	margin-top: 3px;
+}
+.header .inner{
+	height: 50px;
+}
+.weixin-login{
+	width: 400px;
+	margin:100px auto 20px auto;
+	border:1px solid #ccc;
+	border-radius: 3px;
+	background-color:#fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.weixin-login .inner{
+	padding:20px;
+}
+.input-item{
+	border:1px solid #e7e7eb;
+	height: 40px;
+	padding:2px 0 2px 40px;
+	margin-top: -1px;
+	position: relative;
+}
+.login-title{
+	margin-bottom: 20px;
+}
+.input-item .iconfont{
+	font-size: 22px;
+}
+.abs-icon{
+	position: absolute;
+	left:10px;
+	top:5px;
+}
+.input-item input{
+	border:0;
+	font-size: 14px;
+	line-height: 1.3em;
+	padding:11px 0;
+	width: 100%;
+	vertical-align: middle;
+}
+.btn{
+	display: inline-block;
+	*zoom:1;
+	border-radius: 3px;
+	font-size: 14px;
+	border:0;
+	color:#fff;
+	padding:7px 0;
+	background-color: #44b549;
+	min-width: 114px;
+	text-align: center;
+}
+.btn{
+	*display:inline;
+}
+.btn:hover{
+	background-color:#2f9833;
+}
+.login-btn{
+	color:#fff;
+}
+.footer{
+	padding:10px 0;
+	color:#fff;
+	background-color: #ccc;
+	text-align: center;
+	margin-top: 20px;
+}
+.single-page .footer{
+	width: 100%;
+	position: absolute;
+	left:0;
+	bottom: 0;
+}
+#hint{
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	color:#fff;
+	border-radius: 3px;
+	background-color: #f80;
+	text-align: center;
+	position: fixed;
+	left:50%;
+	margin-left: -100px;
+	top:55px;
+	display: none;
+}
+table{
+	border-collapse: collapse;
+	border:1px solid #efefef;
+	width: 100%;
+	text-align: center;
+}
+th{
+	background-color: #efefef;
+	white-space: nowrap;
+	padding:5px 0;
+	border:1px solid #fff;
+}
+td{
+	border:1px solid #efefef;
+}
+td{
+	padding:5px 0;
+}
+.user-main{
+	padding-top: 20px;
+}
+.tool-bar{
+	margin:0 0 20px;
+}
+.tool-options{
+	background-color: #efefef;
+	padding:5px;
+}
+.header-tag{
+	position: absolute;
+	top:15px;
+	right:0;
+}
+.header-tag a{
+	margin-left: 1em;
+	padding:5px;
+}
+.pagination{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.pagination a{
+	padding:7px 12px;
+	border:1px solid #efefef;
+	margin-left: -1px;
+}
+.pagination a:hover{
+	background-color: #efefef;
+}
+.pagination .active,.pagination .active:hover{
+	background-color: #44b549;
+	color:#fff;
+}
+
+.laydate-icon{
+	cursor: pointer;
+}
+.remember{
+	margin:10px 0;
+}
+.remember input{
+	vertical-align:-2px;
+}
+#menu{
+	position: absolute;
+	left:0;
+	top:20px;
+	width: 180px;
+	background-color: #fff;
+	border:1px solid #efefef;
+	height: 100%;
+}
+#menu dl{
+	border-bottom: 1px solid #efefef;
+}
+#menu dt{
+	padding-left: 1em;
+	color:#8d8d8d;
+	line-height: 45px;
+}
+#menu dd{
+	line-height: 34px;
+}
+#menu dd a{
+	display: block;
+	padding-left: 3em;
+}
+#menu a:hover,#menu .active{
+	background-color: #efefef;
+}
+.main-bar{
+	margin-left: 200px;
+}
+.add-item{
+	margin:5px 0;
+	font-size: 0;
+}
+.add-item label{
+	display: inline-block;
+	width: 70px;
+	font-size: 14px;
+}
+.add-item input{
+	padding:8px 2px;
+	border:1px solid #ccc;
+	font-size: 14px;
+	margin-left: 5px;
+}
+.add-btn{
+	text-align: left;
+	padding-left: 100px;
+}
+.add-btn button{
+	padding:5px 12px;
+}
+.tool-options input[type="text"]{
+	padding:2px;
+}
+.tool-options *{
+	vertical-align: middle;
+}
+.info{
+	color:#FF8C69;
+}
+#count{
+	width: 95%;
+	margin:10px auto;
+	font-size: 0;
+}
+#count div{
+	margin:10px 0;
+}
+#count span{
+	font-size: 14px;
+	border:1px solid #efefef;
+	padding:5px;
+	display: inline-block;
+	width:146px;
+	margin-left: -1px;
+}
+.header-tag a:hover{
+	background-color: #ccc;
+	color:#fff;
+	transition:all 0.3s;
+}
